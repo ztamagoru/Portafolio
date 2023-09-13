@@ -50,3 +50,19 @@ function loadPage() {
 
     document.getElementById("itchio-games").innerHTML = htmlGames;
 }
+
+function showCV() {
+    window.open("https://drive.google.com/file/d/1EO-Gh50JMh9HsFBjSIdEt3_vwp-3xC3g/view?usp=sharing","_self")
+}
+
+function showBehance() {
+    window.open("https://www.behance.net/tamagoru","_self")
+}
+
+function showLinkedin() {
+    window.open("https://www.linkedin.com/in/maria-zdanovitch-ab3734269/","_self")
+}
+
+function showGithub() {
+    window.open("https://github.com/ztamagoru","_self")
+}

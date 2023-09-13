@@ -71,7 +71,9 @@ body {
     flex: 0 0 auto;
     background-color: rgb(177, 150, 119);
     padding: 15px;
-    width: 250px;
+    width: 300px;
+    display: flex;
+    flex-flow: column;
 }
 
 .main-page-conteiner {
@@ -98,17 +100,49 @@ body {
     border-radius: 15px;
 }
 
-.itchio, .instagram-conteiner, .about-me {
+.itchio, .instagram-conteiner {
     padding: 10px 25px 25px 25px;
     margin: 25px 0px 25px 0px;
     border-radius: 25px;
     background-color: rgb(187, 167, 145);
 }
 
-h1 {
+h1, p {
     padding-left: 25px;
 }
 
 .about-me {
-    
+    flex: 0 0 auto;
 }
+
+.about-me-sub {
+    display: grid;
+    place-items: center;
+}
+
+.photo {
+    width: 75%;
+    border-radius: 100%;
+    box-shadow: 10epx 10px rgba(28, 13, 85, 0.15);
+}
+
+.link-else {
+    padding: 15px;
+    background-color: rgb(122, 98, 72);
+    width: fit-content;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.link-else:hover {
+    cursor: pointer;
+    background-color: rgb(88, 69, 47);
+}
+
+.about-me-sub-else {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
