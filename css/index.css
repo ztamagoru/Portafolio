@@ -100,14 +100,16 @@ body {
     border-radius: 15px;
 }
 
-.itchio, .instagram-conteiner {
+.itchio,
+.instagram-conteiner {
     padding: 10px 25px 25px 25px;
     margin: 25px 0px 25px 0px;
     border-radius: 25px;
     background-color: rgb(187, 167, 145);
 }
 
-h1, p {
+h1,
+p {
     padding-left: 25px;
 }
 
@@ -146,3 +148,23 @@ h1, p {
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 800px) {
+    .main-page {
+        flex-flow: column;
+    }
+
+    .side-nav-conteiner {
+        width: 100%;
+        padding: 0px 0px 25px 0px;
+    }
+
+    .main-page-conteiner {
+        margin: 0px 15px 0px 15px;
+    }
+
+    .itchio-games {
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
