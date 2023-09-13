@@ -9,32 +9,61 @@
     <link href="././css/common.css" rel="stylesheet" type="text/css">
     <link href="././css/index.css" rel="stylesheet" type="text/css">
 
-    <script src="././js/index.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="vector-header-container">
 
+    <!--
+        <div class="dot-pulse">
+            <div class="dot-pulse__dot"></div>
+        </div>
+    -->
+    <div class="main-page">
+        <div class="side-nav-conteiner">
+            oh hello there
+        </div>
+
+        <div class="main-page-conteiner">
+            <div class="itchio">
+                <h1>
+                    Mi Itch.io
+                </h1>
+
+                <div id="itchio-games" class="itchio-games">
+                </div>
+            </div>
+
+            <div class="instagram-conteiner">
+                <h1>
+                    Mi Instagram
+                </h1>
+
+                <div id="curator-feed-default-feed-layout" class="instagram-embed"><a href="https://curator.io"
+                        target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+            </div>
+        </div>
     </div>
 
-    <div class="main-page-conteiner">
-        <div class="">
-
+    <template id="game-template">
+        <div class="game">
+            <iframe frameborder="0" class="game-widget" src="{{WIDGET_LINK}}">
+                <a href="{{GAME_LINK}}">{{GAME_NAME}}</a>
+            </iframe>
         </div>
-        <div class="instagram-conteiner">
-            <div id="curator-feed-default-feed-layout" class="instagram-embed"><a href="https://curator.io"
-                    target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
-        </div>
-    </div>
+    </template>
 
     <script type="text/javascript">
-        /* curator-feed-default-feed-layout */
         (function () {
             var i, e, d = document, s = "script"; i = d.createElement("script"); i.async = 1; i.charset = "UTF-8";
             i.src = "https://cdn.curator.io/published/1bbb5156-7f18-4e80-9efa-73025c0fa2bf.js";
             e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
         })();
     </script>
+
+    <script src="././js/index.js" type="text/javascript"></script>
 </body>
 
 </html>

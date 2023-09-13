@@ -1,9 +1,99 @@
+.dot-pulse {
+    --uib-size: 40px;
+    --uib-speed: 1.3s;
+    --uib-color: black;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--uib-size);
+    height: calc(var(--uib-size) * 0.27);
+}
+
+.dot-pulse__dot,
+.dot-pulse::before,
+.dot-pulse::after {
+    content: '';
+    display: block;
+    height: calc(var(--uib-size) * 0.18);
+    width: calc(var(--uib-size) * 0.18);
+    border-radius: 50%;
+    background-color: var(--uib-color);
+    transform: scale(0);
+}
+
+.dot-pulse::before {
+    animation: pulse var(--uib-speed) ease-in-out infinite;
+}
+
+.dot-pulse__dot {
+    animation: pulse var(--uib-speed) ease-in-out calc(var(--uib-speed) * 0.125) infinite both;
+}
+
+.dot-pulse::after {
+    animation: pulse var(--uib-speed) ease-in-out calc(var(--uib-speed) * 0.25) infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+/*********************************************/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 .instagram-embed {
     text-align: center;
     align-content: center;
-
 }
 
-.instagram-conteiner {
-    margin: 25px;
+.main-page {
+    display: flex;
+    flex-flow: row
 }
+
+.side-nav-conteiner {
+    flex: 0 0 auto;
+    background-color: rgb(177, 150, 119);
+    padding: 15px;
+    color: white;
+    width: 250px;
+}
+
+.main-page-conteiner {
+    flex: 1 1 auto;
+    margin: 50px;
+    flex: 1 1 auto;
+}
+
+.itchio-games {
+    display: flex;
+    flex-flow: row;
+    padding: 10px;
+}
+
+.game {
+    padding: 0px 10px 0px 10px;
+    flex: 0 0 auto;
+}
+
+.game-widget {
+    flex: 1 1 auto;
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+
