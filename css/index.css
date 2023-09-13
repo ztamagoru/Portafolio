@@ -51,6 +51,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(218, 203, 187);
+    color: white;
     margin: 0;
     padding: 0;
 }
@@ -69,13 +71,12 @@ body {
     flex: 0 0 auto;
     background-color: rgb(177, 150, 119);
     padding: 15px;
-    color: white;
     width: 250px;
 }
 
 .main-page-conteiner {
     flex: 1 1 auto;
-    margin: 50px;
+    margin: 25px 50px 25px 50px;
     flex: 1 1 auto;
 }
 
@@ -97,3 +98,17 @@ body {
     border-radius: 15px;
 }
 
+.itchio, .instagram-conteiner, .about-me {
+    padding: 10px 25px 25px 25px;
+    margin: 25px 0px 25px 0px;
+    border-radius: 25px;
+    background-color: rgb(187, 167, 145);
+}
+
+h1 {
+    padding-left: 25px;
+}
+
+.about-me {
+    
+}
