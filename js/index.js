@@ -66,3 +66,11 @@ function showLinkedin() {
 function showGithub() {
     window.open("https://github.com/ztamagoru","_self")
 }
+
+document.getElementById('cv').addEventListener("click", showCV);
+
+document.getElementById('behance').addEventListener("click", showBehance);
+
+document.getElementById('linkedin').addEventListener("click", showLinkedin);
+
+document.getElementById('github').addEventListener("click", showGithub);
