@@ -118,6 +118,7 @@ p {
 }
 
 .about-me-sub {
+    flex: 0 0 auto;
     display: grid;
     place-items: center;
 }
@@ -131,9 +132,10 @@ p {
 .link-else {
     padding: 15px;
     background-color: rgb(122, 98, 72);
-    width: fit-content;
+    flex: 1 1 auto;
+    width:auto;
     border-radius: 50px;
-    margin: 5px;
+    margin: 10px 15px;
 }
 
 .link-else:hover {
@@ -142,10 +144,10 @@ p {
 }
 
 .about-me-sub-else {
-    align-items: center;
-    justify-content: center;
+    flex: 0 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column;
+    width: 100%;
 }
 
 @media screen and (max-width: 800px) {
