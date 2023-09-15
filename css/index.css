@@ -1,9 +1,10 @@
 .dot-pulse {
     --uib-size: 40px;
     --uib-speed: 1.3s;
-    --uib-color: black;
+    --uib-color: white;
 
-    position: relative;
+    flex: 1 1 auto;
+    position: relative; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,7 +37,6 @@
 }
 
 @keyframes pulse {
-
     0%,
     100% {
         transform: scale(0);
@@ -57,9 +57,20 @@ body {
     padding: 0;
 }
 
+.loader {
+    display: grid;
+    place-items: center;
+}
+
 .instagram-embed {
     text-align: center;
     align-content: center;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0px;
+    margin: 0px;
 }
 
 .main-page {

@@ -1,20 +1,30 @@
-/*
-    import { DotPulse } from '@uiball/loaders'
+document.addEventListener('DOMContentLoaded', () => {
+    let htmlGames = game.map(viewItchio).join('');
+    // console.log('dom loaded')
 
-<DotPulse
+    document.getElementById("itchio-games").innerHTML = htmlGames;
+
+    setTimeout(() => {
+        document.querySelector("#main-page").classList.remove("hidden");
+        document.querySelector(".loader").classList.add("hidden");
+        
+        //console.log('0a')
+    }, 5000);
+})
+
+{/* <DotPulse
     size={40}
     speed={1.3}
     color="black"
-/>
+/> */}
 
-export default function PageSection({ isLoading }) {
-    return (
-        <div aria-live="polite" aria-busy={isLoading}>
-            {isLoading && <Waveform />}
-        </div>
-    )
-}
-*/
+// export default function PageSection({ isLoading }) {
+//     return (
+//         <div aria-live="polite" aria-busy={isLoading}>
+//             {isLoading && <DotPulse />}
+//         </div>
+//     )
+// }
 
 let game = [
     {
@@ -43,28 +53,20 @@ function viewItchio(game) {
         .replace("{{GAME_NAME}}", game.name)
 }
 
-document.addEventListener('DOMContentLoaded', loadPage)
-
-function loadPage() {
-    let htmlGames = game.map(viewItchio).join('');
-
-    document.getElementById("itchio-games").innerHTML = htmlGames;
-}
-
 function showCV() {
-    window.open("https://drive.google.com/file/d/1EO-Gh50JMh9HsFBjSIdEt3_vwp-3xC3g/view?usp=sharing","_self")
+    window.open("https://drive.google.com/file/d/1EO-Gh50JMh9HsFBjSIdEt3_vwp-3xC3g/view?usp=sharing", "_self")
 }
 
 function showBehance() {
-    window.open("https://www.behance.net/tamagoru","_self")
+    window.open("https://www.behance.net/tamagoru", "_self")
 }
 
 function showLinkedin() {
-    window.open("https://www.linkedin.com/in/maria-zdanovitch-ab3734269/","_self")
+    window.open("https://www.linkedin.com/in/maria-zdanovitch-ab3734269/", "_self")
 }
 
 function showGithub() {
-    window.open("https://github.com/ztamagoru","_self")
+    window.open("https://github.com/ztamagoru", "_self")
 }
 
 document.getElementById('cv').addEventListener("click", showCV);
