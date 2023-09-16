@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector(".loader").classList.add("hidden");
         
         //console.log('0a')
-    }, 5000);
+    }, 2000);
 })
 
 {/* <DotPulse
