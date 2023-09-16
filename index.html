@@ -14,14 +14,15 @@
 </head>
 
 <body>
+    <div class="loader">
+        <div class="dot-conteiner">
+            <div class="dot-pulse">
+                <div class="dot-pulse__dot"></div>
+            </div>
+        </div>
+    </div>
 
-    <!--
-        <div class="dot-pulse">
-            <div class="dot-pulse__dot"></div>
-        </div>s
-    -->
-
-    <div class="main-page">
+    <div class="main-page hidden" id="main-page">
         <div class="side-nav-conteiner">
             <div class="about-me-sub">
                 <h2>
@@ -41,20 +42,28 @@
             </p>
 
             <div class="about-me-sub-else">
-                <div class="link-else" onclick="showCV()">
-                    Curriculum
+                <div class="link-else" id="cv">
+                    <center>
+                        Curriculum
+                    </center>
                 </div>
 
-                <div class="link-else" onclick="showBehance()">
-                    Behance
+                <div class="link-else" id="behance">
+                    <center>
+                        Behance
+                    </center>
                 </div>
 
-                <div class="link-else" onclick="showLinkedin()">
-                    Linkedin
+                <div class="link-else" id="linkedin">
+                    <center>
+                        Linkedin
+                    </center>
                 </div>
 
-                <div class="link-else" onclick="showGithub()">
-                    Github
+                <div class="link-else" id="github">
+                    <center>
+                        Github
+                    </center>
                 </div>
             </div>
         </div>
@@ -95,7 +104,7 @@
         })();
     </script>
 
-    <script src="././js/index.js" type="text/javascript"></script>
+    <script src="././js/index.js" type="module"></script>
 </body>
 
 </html>
